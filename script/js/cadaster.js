@@ -1,4 +1,4 @@
-import {saudacao} from "./config.js";
+
 let cadasterContainer = document.getElementById("cadasterF");
 let cadasterButton =document.createElement("button");
 
@@ -58,9 +58,14 @@ cadasterContainer.appendChild(login);
 cadasterContainer.appendChild(senha);
 cadasterContainer.appendChild(cadasterButton);
 
-idade.addEventListener("input", function() {
-    if (this.value < 0) {
-      this.value = 0;
-    }
+idade.addEventListener("input", idadeInput);
+senha.addEventListener("input", numbersInput);
+telefone.addEventListener("input", numbersInput);
+
+let client = [];
+
+
+  cadasterButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    verifyButton(nome,email,idade,endereco,telefone,login,senha);
   });
-  saudacao("João");
