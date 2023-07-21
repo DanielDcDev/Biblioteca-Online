@@ -58,6 +58,11 @@ cadasterContainer.appendChild(login);
 cadasterContainer.appendChild(senha);
 cadasterContainer.appendChild(cadasterButton);
 
+
+
+
+nome,email,idade,endereco,telefone,login,senha,cadasterButton.display = "block";
+cadasterContainer.style.display =  "block";
 idade.addEventListener("input", idadeInput);
 senha.addEventListener("input", numbersInput);
 telefone.addEventListener("input", numbersInput);

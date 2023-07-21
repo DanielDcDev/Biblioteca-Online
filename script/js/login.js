@@ -16,3 +16,7 @@ senhaL.classList.add("input-field");
 loginContainer.appendChild(loginL);
 loginContainer.appendChild(senhaL);
 
+loginContainer.style.backgroundColor = "black";
+loginContainer.style.display = "block";
+loginL.style.display = "block";
+senhaL.style.display = "block";
